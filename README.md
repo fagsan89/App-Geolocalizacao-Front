@@ -14,7 +14,11 @@ A página será recarregada se você fizer edições.
 Você também verá quaisquer erros de fiapos no console.
 
 ### CHAVE API GOOGLE
-No componente de formulario src/components/FormularioCadastro, será necessario colocar sua chave de acesso aos serviços google, para isso basta acessar o site do google api  e seguir os passos da documentação(https://developers.google.com/maps/documentation/javascript/overview) acesse sua conta para ter acesso a chave e API's ativas do google (https://console.cloud.google.com/)
+No componente de formulario src/components/FormularioCadastro, será necessario colocar sua chave de acesso aos serviços google, para isso basta acessar o site do google api  e seguir os passos da documentação.
+<br> Documentação : (https://developers.google.com/maps/documentation/javascript/overview) 
+
+<br>acesse sua conta para ter acesso a chave e API's ativas do google.
+<br>Google Cloud : (https://console.cloud.google.com/)
 
 #### exemplo -> const API_KEY_GOOGLE = 'AIzaSyBkNxIxXKNiFBuc3aKcXzvXnW6f1QgSZQWEsEdsaEeFqS'
 
