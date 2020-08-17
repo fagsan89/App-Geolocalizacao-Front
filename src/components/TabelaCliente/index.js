@@ -2,7 +2,7 @@ import React from 'react'
 import { ContainerTable, Thead, Th, Td } from './styles'
 
 function Tabela(props) {
-    //console.log('TABELA',props.data)
+ 
   return (
           <ContainerTable >       
             <table className="table table-striped">

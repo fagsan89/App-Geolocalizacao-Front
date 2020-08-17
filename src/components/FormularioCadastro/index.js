@@ -15,13 +15,16 @@ function Formulario(props) {
     })
 
     const [errors, setErrors] = React.useState({})
-    const [validaErrors, setValidaErrors] = React.useState(false)
+    const [validaErrors, setValidaErrors] = React.useState(true)
 
     const _address = useRef(null)
 
     useEffect(()=>{
 
         
+        if(Object.keys(validate()).length === 0 && validaErrors ===false){
+            handleSubmit() 
+        }
 
       },[validaErrors]) // eslint-disable-line react-hooks/exhaustive-deps
     
@@ -156,10 +159,6 @@ function Formulario(props) {
 
         setErrors(validate())
 
-        if(Object.keys(validate()).length === 0 && validaErrors ===false){
-            setErrors({})
-            handleSubmit() 
-        }
     }
    
     async function handleSubmit(){

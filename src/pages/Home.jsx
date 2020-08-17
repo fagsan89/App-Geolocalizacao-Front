@@ -24,7 +24,7 @@ function Home() {
 
      await get('/listar')
     .then((resp) =>{   
-       //console.log(resp.data)  
+ 
        const data = []
        resp.data.clientes.map((item) => {
          
