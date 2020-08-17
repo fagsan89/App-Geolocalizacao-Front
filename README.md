@@ -13,5 +13,4 @@ Abra http://localhost:3000 para visualizá-lo no navegador.
 A página será recarregada se você fizer edições.
 Você também verá quaisquer erros de fiapos no console.
 
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Imagem App
