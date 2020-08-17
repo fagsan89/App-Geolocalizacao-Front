@@ -3,6 +3,9 @@ import apiMaps from '../../services/api_maps'
 import { post, del} from '../../services/api'
 import { ContainerForm, ContainerButtonFooter } from './styles';
 
+
+const API_KEY_GOOGLE = ''
+
 function Formulario(props) {
 
     const[addressText, setAddressText] = React.useState('')
@@ -34,7 +37,7 @@ function Formulario(props) {
          
         if (endereco !== '' && endereco !== undefined){
 
-            await apiMaps.get(`json?address=${endereco}', Brasil', 'region': 'BR'&key=AIzaSyBkNxIxXKNiFBuc3aKcXzvXnW6f1QgSZQs`)
+            await apiMaps.get(`json?address=${endereco}', Brasil', 'region': 'BR'&key=${API_KEY_GOOGLE}`)
             .then((resp)=>{
                 //console.log(resp.data.results[0].address_components[0].types[0])
                 let dataEnd =[]
